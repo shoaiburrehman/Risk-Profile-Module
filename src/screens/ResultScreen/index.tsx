@@ -8,9 +8,9 @@ const ResultScreen: React.FC = () => {
   const { score } = useAppSelector(state => state.questionnaire);
 
   let riskProfile = "Low";
-  if (score > 7 && score <= 12) {
+  if (score > 7 && score <= 13) {
     riskProfile = "Medium";
-  } else if (score > 12) {
+  } else if (score > 13) {
     riskProfile = "High";
   }
 
